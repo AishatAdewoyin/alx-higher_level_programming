@@ -1,10 +1,10 @@
-# Python Learning Repository
+# My Python Learning Repository
 
 This repository is dedicated to documenting my Python learning journey as part of the ALX Higher Level Programming curriculum. It contains various directories, each corresponding to a specific topic or concept in Python programming.
 
 ## Content Directories
 
-1. [**0x00: Python Hello World**](./0x00-python_hello_world): This directory focuses on the basics of Python programming, including writing and executing the classic "Hello, World!" program.
+1. [**0x00: Python Hello World**](./0x00-python-hello_world/): This directory focuses on the basics of Python programming, including writing and executing the classic "Hello, World!" program.
 
 2. [**0x01: Flow Statements, Loops, and Functions**](./0x01): In this directory, I explore flow control statements, loops, and the concept of functions in Python.
 
