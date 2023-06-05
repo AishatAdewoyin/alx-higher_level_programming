@@ -4,7 +4,7 @@ This repository is dedicated to documenting my Python learning journey as part o
 
 ## Content Directories
 
-1. [**0x00: Python Hello World**](./0x00): This directory focuses on the basics of Python programming, including writing and executing the classic "Hello, World!" program.
+1. [**0x00: Python Hello World**](./0x00-python_hello_world): This directory focuses on the basics of Python programming, including writing and executing the classic "Hello, World!" program.
 
 2. [**0x01: Flow Statements, Loops, and Functions**](./0x01): In this directory, I explore flow control statements, loops, and the concept of functions in Python.
 
