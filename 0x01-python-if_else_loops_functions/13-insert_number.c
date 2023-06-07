@@ -2,17 +2,6 @@
 #include "lists.h"
 
 /**
- * struct listint_s - linked list
- * @n: int
- * @next: pointer to nxt node
- */
-typedef struct listint_s
-{
-	int n;
-	struct listint_s *next;
-} listint_t;
-
-/**
  * create_node - Create new node with given number
  * @number: num to store in new node
  *
@@ -23,12 +12,12 @@ listint_t *create_node(int number)
 	listint_t *new_node = malloc(sizeof(listint_t));
 
 	if (new_node == NULL)
-		return NULL;
+		return (NULL);
 
 	new_node->n = number;
 	new_node->next = NULL;
 
-	return new_node;
+	return (new_node);
 }
 
 /**
@@ -43,7 +32,7 @@ listint_t *insert_node(listint_t **head, int number)
 	listint_t *new_node = create_node(number);
 
 	if (new_node == NULL)
-		return NULL;
+		return (NULL);
 
 	if (*head == NULL || number < (*head)->n)
 	{
@@ -61,5 +50,5 @@ listint_t *insert_node(listint_t **head, int number)
 		current->next = new_node;
 	}
 
-	return new_node;
+	return (new_node);
 }
