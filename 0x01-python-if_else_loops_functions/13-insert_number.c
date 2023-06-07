@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "lists.h"
 
 /**
  * struct listint_s - linked list
