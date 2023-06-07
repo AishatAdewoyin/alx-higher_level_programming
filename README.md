@@ -26,5 +26,5 @@ This repository is dedicated to documenting my Python learning journey as part o
 
 I am passionate about programming and continuously strive to enhance my Python skills through practice and learning. Feel free to explore the directories and code samples within this repository to gain insights into my Python learning journey. If you have any questions, suggestions, or feedback, please don't hesitate to reach out.
 
-Happy coding!
+Happy coding!🚀🚀🚀
 
