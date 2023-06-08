@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-for char_code in range(122, 96, -1):
-    if char_code % 2 == 0:
-        print("{:c}".format(char_code), end="")
+for n in range(122, 96, -1):
+    if n % 2 != 0:
+        print("{:c}".format(n - 32), end='')
     else:
-        print("{:c}".format(char_code - 32), end="")
-
-print()
+        print("{:c}".format(n), end='')
