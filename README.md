@@ -18,8 +18,6 @@ This repository is dedicated to documenting my Python learning journey as part o
 
 7. [**0x06: Classes**](./0x06): In this directory, I learn about object-oriented programming in Python, including defining and working with classes and objects.
 
-## Author
-
 ## This repository is maintained by:
 
 ## Aishat Adeladun Adewoyin
