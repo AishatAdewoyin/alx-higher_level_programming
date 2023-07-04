@@ -1,0 +1,49 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+# Test case 1: First name and last name provided
+>>> say_my_name("John", "Doe")
+My name is John Doe
+
+# Test case 2: Only first name provided
+>>> say_my_name("Alice")
+My name is Alice
+
+# Test case 3: Non-string first name
+>>> say_my_name(123, "Smith")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "3-say_my_name.py", line 14, in say_my_name
+    raise TypeError("first_name must be a string")
+TypeError: first_name must be a string
+
+# Test case 4: Non-string last name
+>>> say_my_name("Jane", 456)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "3-say_my_name.py", line 18, in say_my_name
+    raise TypeError("last_name must be a string")
+TypeError: last_name must be a string
+
+# Test case 5: Empty first name and non-empty last name
+>>> say_my_name("", "Smith")
+My name is Smith
+
+# Test case 6: Non-empty first name and empty last name
+>>> say_my_name("Jane", "")
+My name is Jane
+
+# Test case 7: First name and last name as integers
+>>> say_my_name(123, 456)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "3-say_my_name.py", line 14, in say_my_name
+    raise TypeError("first_name must be a string")
+TypeError: first_name must be a string
+
+# Test case 8: First name and last name as None
+>>> say_my_name(None, None)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "3-say_my_name.py", line 14, in say_my_name
+    raise TypeError("first_name must be a string")
+TypeError: first_name must be a string
