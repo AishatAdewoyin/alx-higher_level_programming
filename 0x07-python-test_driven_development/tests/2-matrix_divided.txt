@@ -1,0 +1,103 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+# Test Case 1: Divide each element in the matrix by 3
+>>> matrix = [
+...     [6, 9, 12],
+...     [15, 18, 21]
+... ]
+>>> print(matrix_divided(matrix, 3))
+[[2.0, 3.0, 4.0], [5.0, 6.0, 7.0]]
+
+# Test Case 2: Divide each element in the matrix by 3
+>>> matrix = [
+...     [2, 4, 6],
+...     [8, 10, 12]
+... ]
+>>> print(matrix_divided(matrix, 3))
+[[0.67, 1.33, 2.0], [2.67, 3.33, 4.0]]
+
+# Test Case 3: Verify the original matrix remains unchanged
+>>> print(matrix)
+[[2, 4, 6], [8, 10, 12]]
+
+# Test Case 4: Divide each element in the matrix by 3
+>>> matrix = [
+...     [1.2, 2.4, 3.6],
+...     [4.8, 6.0, 7.2]
+... ]
+>>> print(matrix_divided(matrix, 3))
+[[0.4, 0.8, 1.2], [1.6, 2.0, 2.4]]
+
+# Test Case 5: Divide each element in the matrix by 3
+>>> matrix = [
+...     [1, 2.2, 3, 4.4, 5],
+...     [6.6, 7.0, 8, 9.999, 10]
+... ]
+>>> print(matrix_divided(matrix, 3))
+[[0.33, 0.73, 1.0, 1.47, 1.67], [2.2, 2.33, 2.67, 3.33, 3.33]]
+
+# Test Case 6: Verify the function raises an error for a non-list matrix
+>>> matrix = "not a list"
+>>> print(matrix_divided(matrix, 3))
+Traceback (most recent call last):
+  TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+# Test Case 7: Verify the function raises an error for a None matrix
+>>> matrix = None
+>>> print(matrix_divided(matrix, 3))
+Traceback (most recent call last):
+  TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+# Test Case 8: Verify the function raises an error for an empty matrix
+>>> matrix = []
+>>> print(matrix_divided(matrix, 3))
+Traceback (most recent call last):
+  TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+# Test Case 9: Verify the function handles a matrix with an empty row
+>>> matrix = [[]]
+>>> print(matrix_divided(matrix, 3))
+[[]]
+
+# Test Case 10: Verify the function raises an error for a matrix with non-numeric elements
+>>> matrix = [1, 2, 3]
+>>> print(matrix_divided(matrix, 3))
+Traceback (most recent call last):
+  TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+# Test Case 11: Verify the function raises an error for a matrix with non-numeric elements
+>>> matrix = [
+...     [1, 2, 3],
+...     [4, "not a number", 6]
+... ]
+>>> print(matrix_divided(matrix, 3))
+Traceback (most recent call last):
+  TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+# Test Case 12: Verify the function raises an error for a matrix with rows of different sizes
+>>> matrix = [
+...     [1, 2, 3, 4],
+...     [5, 6, 7]
+... ]
+>>> print(matrix_divided(matrix, 3))
+Traceback (most recent call last):
+  TypeError: Each row of the matrix must have the same size
+
+# Test Case 13: Verify the function raises an error for a non-numeric division factor
+>>> matrix = [
+...     [1, 2, 3],
+...     [4, 5, 6]
+... ]
+>>> print(matrix_divided(matrix, "not a number"))
+Traceback (most recent call last):
+  TypeError: div must be a number
+
+# Test Case 14: Verify the function raises an error for a None division factor
+>>> print(matrix_divided(matrix, None))
+Traceback (most recent call last):
+  TypeError: div must be a number
+
+# Test Case 15: Verify the function raises an error for division by zero
+>>> print(matrix_divided(matrix, 0))
+Traceback (most recent call last):
+  ZeroDivisionError: division by zero
