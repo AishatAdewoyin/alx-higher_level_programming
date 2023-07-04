@@ -10,23 +10,23 @@ Importing the function from the module:
 >>> add_integer = __import__('0-add_integer').add_integer
 
 Addition Examples:
->>> add_integer(5, 3)
+>>> add_integer(4, 4)
 8
 
->>> add_integer(-50, -50)
+>>> add_integer(-40, -60)
 -100
 
 >>> add_integer(-10, 5)
 -5
 
->>> add_integer(2.0, 4.0)
-6
+>>> add_integer(4.0, 4.0)
+8
 
 >>> add_integer(2)
 100
 
 Handling Invalid Inputs:
->>> add_integer(10, "two")
+>>> add_integer(10, "hello")
 Traceback (most recent call last):
     ...
 TypeError: b must be an integer
@@ -51,12 +51,12 @@ Traceback (most recent call last):
     ...
 TypeError: a must be an integer
 
->>> add_integer(10, [1, 2, 3])
+>>> add_integer(10, [0])
 Traceback (most recent call last):
     ...
 TypeError: b must be an integer
 
->>> add_integer("Hello")
+>>> add_integer("Add")
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
